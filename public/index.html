@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Form</title>
+</head>
+<body>
+  <form action="/filter" method="post">
+    <label for="owePeriodDropdown">Select Owe Period:</label>
+    <select id="owePeriodDropdown" name="owePeriod">
+      <option value=0>Owe 30</option>
+      <option value=1>Owe 60</option>
+      <option value=2>Owe 90</option>
+    </select>
+    <br>
+    <label for="min">Min:</label>
+    <input type="number" id="min" name="min">
+    <br>
+    <label for="max">Max:</label>
+    <input type="number" id="max" name="max">
+    <br>
+    <label for="branchDropdown">Select Branch:</label>
+    <select id="branchDropdown" name="branch">
+      <option value=0>All</option>
+      <option value=1>Mudgee</option>
+      <option value=2>Orange</option>
+      <option value=3>Bathurst</option>
+      <option value=4>Taree</option>
+      <option value=5>Gunnedah</option>
+      <option value=6>Port Macquarie</option>
+      <option value=7>Coffs Harbour</option>
+      <option value=8>Dubbo</option>
+      <option value=9>Global</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <button >Load Data</button>
+</body>
+</html>

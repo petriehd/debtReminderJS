@@ -1,17 +1,23 @@
 export enum Branch {
-  All,
-  Mudgee,
-  Orange,
-  Bathurst,
-  Taree,
-  Gunnedah,
-  PortMacquarie,
-  CoffsHarbour,
-  Dubbo,
-  Global,
+  All = 'All',
+  Mudgee = 'Mudgee',
+  Orange = 'Orange',
+  Bathurst = 'Bathurst',
+  Taree = 'Taree',
+  Gunnedah = 'Gunnedah',
+  PortMacquarie = 'PortMacquarie',
+  CoffsHarbour = 'CoffsHarbour',
+  Dubbo = 'Dubbo',
+  Global = 'Global',
 }
 
-export enum ColumnIndex {
+export enum owePeriod {
+  Owe30 = 0,
+  Owe60 = 1,
+  Owe90 = 2,
+}
+
+export enum Column {
   id,
   firstName,
   lastName,
@@ -22,7 +28,4 @@ export enum ColumnIndex {
   branch
 }
 
-
-export interface dataStore {
-
-}
+export type csvExportData = string[][]
